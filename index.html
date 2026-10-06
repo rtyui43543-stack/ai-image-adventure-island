@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="選擇預先製作的圖片，離線對照角色、畫風、場景的提示詞與畫面。"
+    />
+    <title>AI 生圖冒險島</title>
+    <meta name="theme-color" content="#17304d" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="生圖冒險島" />
+    <link rel="manifest" href="manifest.webmanifest" />
+    <link rel="icon" href="assets/app-icons/icon-192.png" type="image/png" />
+    <link rel="apple-touch-icon" href="assets/app-icons/apple-touch-icon.png" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="offline.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <section id="home-screen" class="home-screen" aria-labelledby="home-heading">
+        <div class="home-brand brand-signature"><span class="association-name">台灣校園人工智慧教育協會</span></div>
+        <div class="home-content">
+          <p class="home-welcome">歡迎來到</p>
+          <h1 id="home-heading"><span class="title-ai">AI</span> 生圖冒險島</h1>
+          <p class="home-description">選角色、選畫風、選場景，開啟你的冒險!</p>
+          <button id="start-button" class="start-button" type="button">開始體驗 <span aria-hidden="true">→</span></button>
+          <p class="home-note">透過預製 AI 圖片，體驗提示詞與畫面的關係。</p>
+        </div>
+        <section class="offline-panel" aria-labelledby="offline-heading">
+          <div class="offline-heading-row">
+            <h2 id="offline-heading">把冒險帶著走</h2>
+            <span id="offline-badge" class="offline-badge" data-ready="false">正在檢查</span>
+          </div>
+          <p id="offline-description">加入主畫面，再下載完整圖片與音樂，沒有網路也能展開冒險。</p>
+          <p id="offline-status" role="status" aria-live="polite">正在檢查離線內容…</p>
+          <progress id="offline-progress" class="offline-progress" max="100" value="0" aria-label="離線內容下載進度" hidden></progress>
+          <div class="offline-actions">
+            <button id="install-button" class="offline-action secondary" type="button" hidden>安裝到主畫面</button>
+            <button id="offline-download" class="offline-action" type="button" disabled>下載離線內容</button>
+            <button id="offline-cancel" class="offline-action secondary" type="button" hidden>暫停下載</button>
+            <button id="offline-reload" class="offline-action secondary" type="button" hidden>重新開啟</button>
+          </div>
+          <details id="install-guide">
+            <summary>手機、平板安裝方式</summary>
+            <ol>
+              <li><strong>iPhone／iPad：</strong>用 Safari 開啟發布網址，按「分享」→「加入主畫面」；若有「打開為網頁 App」，請保持開啟。</li>
+              <li><strong>Android：</strong>用 Chrome 開啟發布網址，按「安裝到主畫面」，或由瀏覽器選單選擇安裝。</li>
+              <li>從主畫面的「生圖冒險島」圖示開啟，按「下載離線內容」，等待顯示「可離線使用」。下載期間請保持畫面開啟。</li>
+              <li>完成後，可開飛航模式測試。清除網站資料或移除 App 後，請重新下載。</li>
+            </ol>
+          </details>
+        </section>
+      </section>
+      <header id="experience-header" class="topbar" hidden>
+        <div class="site-intro">
+          <div class="identity-heading">
+            <div class="brand-signature">
+              <span class="association-name">台灣校園人工智慧教育協會</span>
+            </div>
+            <h1 class="site-title"><span class="title-ai">AI</span> <span>生圖冒險島</span></h1>
+          </div>
+          <p class="experience-note">選好夥伴，打開想像力，揭曉你的 AI 奇幻冒險！</p>
+        </div>
+        <div class="header-tools">
+          <button id="home-button" class="home-button" type="button" aria-label="回到首頁，結束本次體驗"><span aria-hidden="true">⌂</span> 回到首頁</button>
+          <div class="audio-toolbar" aria-label="冒險聲音設定">
+            <button id="music-toggle" class="music-toggle" type="button" aria-pressed="false">開啟冒險音樂</button>
+            <details class="audio-settings">
+              <summary>聲音設定</summary>
+              <div class="audio-settings-panel">
+                <label for="audio-volume">音量 <output id="audio-volume-label" for="audio-volume">25%</output></label>
+                <input id="audio-volume" type="range" min="0" max="100" step="5" value="25" aria-label="音樂與音效音量" />
+                <label class="sound-preference"><input id="sfx-toggle" type="checkbox" checked /> 選擇與場景音效</label>
+                <p>揭曉後，音效會呼應畫面。配樂與音效皆可離線播放。</p>
+              </div>
+            </details>
+          </div>
+          <span id="audio-status" class="audio-status" role="status"></span>
+          <p class="steps" aria-label="操作步驟">
+          <span id="step-type" class="step is-active" aria-current="step">1 選類型</span>
+          <span id="step-style" class="step">2 選風格</span>
+          <span id="step-character" class="step">3 選角色</span>
+          <span id="step-background" class="step">4 選場景</span>
+          <span id="step-reveal" class="step">5 揭曉冒險</span>
+          </p>
+        </div>
+      </header>
+
+      <section id="workspace" class="workspace" aria-label="提示詞圖片體驗區" hidden>
+        <div class="control-panel">
+          <section id="type-section" class="choice-section" aria-labelledby="type-heading">
+            <div class="section-heading">
+              <span class="section-number">01</span>
+              <div>
+                <h2 id="type-heading">選擇角色類型</h2>
+                <p id="type-hint">選擇冒險少年、神奇少女、寶可夢或機甲戰士，展開這次冒險。</p>
+                <p id="type-selection" class="choice-selection" hidden></p>
+              </div>
+              <button id="type-edit" class="edit-choice" type="button" aria-controls="type-options" aria-expanded="true" hidden>更改</button>
+            </div>
+            <div id="type-options" class="option-grid type-grid"></div>
+          </section>
+
+          <section id="style-section" class="choice-section" aria-labelledby="style-heading" hidden>
+            <div class="section-heading">
+              <span class="section-number">02</span>
+              <div>
+                <h2 id="style-heading">選擇圖片風格</h2>
+                <p id="style-hint">選擇喜歡的線條、材質與光影感受。</p>
+                <p id="style-selection" class="choice-selection" hidden></p>
+              </div>
+              <button id="style-edit" class="edit-choice" type="button" aria-controls="style-options" aria-expanded="false" hidden>更改</button>
+            </div>
+            <div id="style-options" class="option-grid"></div>
+          </section>
+
+          <section id="character-section" class="choice-section" aria-labelledby="character-heading" hidden>
+            <div class="section-heading">
+              <span class="section-number">03</span>
+              <div>
+                <h2 id="character-heading">選擇角色</h2>
+                <p id="character-hint">依照前兩步，選擇喜歡的冒險夥伴。</p>
+                <p id="character-selection" class="choice-selection" hidden></p>
+              </div>
+              <button id="character-edit" class="edit-choice" type="button" aria-controls="character-options" aria-expanded="false" hidden>更改</button>
+            </div>
+            <div id="character-options" class="option-grid character-grid"></div>
+          </section>
+
+          <section id="background-section" class="choice-section" aria-labelledby="background-heading" hidden>
+            <div class="section-heading">
+              <span class="section-number">04</span>
+              <div>
+                <h2 id="background-heading">選擇場景線索</h2>
+                <p id="background-hint">選擇角色的冒險場景，比較提示詞與圖片。</p>
+                <p id="background-selection" class="choice-selection" hidden></p>
+              </div>
+              <button id="background-edit" class="edit-choice" type="button" aria-controls="background-options" aria-expanded="false" hidden>更改</button>
+            </div>
+            <div id="background-options" class="option-grid background-grid"></div>
+          </section>
+
+        </div>
+
+        <section class="result-panel" aria-labelledby="result-heading">
+          <div class="result-heading">
+            <div>
+              <p class="eyebrow">想像 → 選擇 → 揭曉</p>
+              <h2 id="result-heading">我的冒險配方</h2>
+            </div>
+            <button id="reset-button" class="reset-button" type="button">重新選擇</button>
+          </div>
+
+          <div id="recipe-panel" class="recipe-panel">
+            <div class="recipe-intro">
+              <p id="recipe-caption">先選一種角色類型，開始組合你的冒險。</p>
+              <span id="recipe-progress" class="recipe-progress">已選 0／4</span>
+            </div>
+            <ol class="recipe-list" aria-label="目前的冒險配方">
+              <li class="recipe-slot"><span class="recipe-label">01 角色類型</span><strong id="recipe-type">等你選擇</strong></li>
+              <li class="recipe-slot"><span class="recipe-label">02 圖片風格</span><strong id="recipe-style">等你選擇</strong></li>
+              <li class="recipe-slot"><span class="recipe-label">03 冒險夥伴</span><strong id="recipe-character">等你選擇</strong></li>
+              <li class="recipe-slot"><span class="recipe-label">04 場景線索</span><strong id="recipe-background">等你選擇</strong></li>
+            </ol>
+            <div class="recipe-mission">
+              <span class="recipe-label">這次要做的事</span>
+              <p id="recipe-action">選好角色與場景，就會出現這次的冒險動作。</p>
+            </div>
+            <p id="recipe-question" class="recipe-question">完整畫面會在最後揭曉。你想展開什麼冒險？</p>
+          </div>
+
+          <div id="scene" class="scene" role="group" aria-label="冒險圖片" tabindex="-1" hidden>
+            <img id="background-image" class="background-image" alt="" />
+            <div class="ground-shadow" aria-hidden="true"></div>
+            <img id="character-image" class="character-image" alt="" />
+          </div>
+
+          <div id="result-summary" class="result-summary" hidden>
+            <span id="result-character"></span>
+            <span id="result-background"></span>
+            <span id="result-style"></span>
+          </div>
+          <details id="prompt-card" class="prompt-card" aria-labelledby="prompt-label" hidden>
+            <summary class="prompt-label">
+              <span id="prompt-label">閱讀完整提示詞</span>
+              <span id="combination-id" class="combination-id"></span>
+            </summary>
+            <p id="prompt-heading" class="prompt-text"></p>
+          </details>
+          <button id="reveal-button" class="reveal-button" type="button" disabled>
+            還差 4 個選擇，即可揭曉
+          </button>
+          <div id="result-actions" class="result-actions" hidden>
+            <p>和你想像的一樣嗎？換一個場景，看看哪裡不同。</p>
+            <button id="change-scene-button" class="reveal-button" type="button">只換場景，再看看</button>
+          </div>
+          <label class="motion-preference"><input id="reduce-motion" type="checkbox" /> 減少動畫</label>
+          <p id="status-message" class="status-message" role="status"></p>
+        </section>
+      </section>
+    </main>
+
+    <noscript>此體驗需要啟用瀏覽器的 JavaScript，但不需要連接網路。</noscript>
+    <script src="data.js"></script>
+    <script src="mystery-data.js"></script>
+    <script src="scene-audio.js"></script>
+    <script src="audio.js"></script>
+    <script src="app.js"></script>
+    <script src="offline.js"></script>
+  </body>
+</html>
