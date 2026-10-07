@@ -465,7 +465,8 @@ h2 {
 .style-sample .portrait-window { width: min(100%, 172px); }
 .character-sample .portrait-window { width: min(100%, 120px); }
 
-.portrait-window .option-preview {
+.portrait-window .option-preview,
+.scene-window .option-preview {
   position: absolute;
   width: var(--crop-width);
   height: var(--crop-height);
@@ -475,6 +476,23 @@ h2 {
   aspect-ratio: auto;
   object-fit: fill;
   background: transparent;
+}
+
+.preview-frame.scene-sample { padding: 0; background: #eaf1fa; }
+.scene-window {
+  position: relative;
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  isolation: isolate;
+  background: #eaf1fa;
+}
+.background-grid .option-with-preview .option-copy { padding: 14px 16px 16px; }
+.background-grid .option-caption { color: #526482; font-weight: 500; }
+
+@media (max-width: 560px) {
+  #background-options.background-grid { grid-template-columns: minmax(0, 1fr); }
 }
 
 .option-button.option-character .option-copy { padding-top: 10px; }

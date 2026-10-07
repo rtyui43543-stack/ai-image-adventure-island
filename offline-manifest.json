@@ -1,11 +1,11 @@
 {
-  "version": "11e083ec17d34fc97c66591b0b0573e9ab221ebd03fc35f7acc55666402ac739",
-  "totalBytes": 126688053,
+  "version": "67dca18039c73512f6ff8e39f350e4a8184e2001bd07dfb820151fb90a70e296",
+  "totalBytes": 126732763,
   "files": [
     {
       "url": "app.js",
-      "bytes": 26712,
-      "sha256": "f5ee9dc20eb8d4ca04eb74677784763cf66edfd361caaf6e6eb7f72e1513e811"
+      "bytes": 27286,
+      "sha256": "5044d5014270158660e4835d540e71b5adfc1dd4ac225a0df0c948de5a5bc110"
     },
     {
       "url": "assets/app-icons/apple-touch-icon.png",
@@ -1734,8 +1734,8 @@
     },
     {
       "url": "index.html",
-      "bytes": 12643,
-      "sha256": "5542fad0a1e5a95fc4fd7be1ac1550627adf8bcf5a0f062984480bb3b6faff42"
+      "bytes": 12725,
+      "sha256": "3fd1afc96bdd522a5e9093ec07ec09c0b223d58a50a94f59e0b4a610cbec8f93"
     },
     {
       "url": "manifest.webmanifest",
@@ -1763,9 +1763,14 @@
       "sha256": "96686095e7fb6b25dc096d72362fa00b19282c91b6ae994374e3808e752585f5"
     },
     {
+      "url": "scene-previews.js",
+      "bytes": 43533,
+      "sha256": "6ee24bfc322936204121ea860f09ba515a8899512a2b6dbb34b858c598fd31bd"
+    },
+    {
       "url": "styles.css",
-      "bytes": 24237,
-      "sha256": "ebde0ae647500a49aa7056d757b96e39ab8394c88e633ce7414616502e4881dd"
+      "bytes": 24758,
+      "sha256": "d2a9639566a688e3094c5e99bb357f24e69931dc882bb3ab9b9ec41d475a560d"
     }
   ]
 }

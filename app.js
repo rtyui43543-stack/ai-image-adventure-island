@@ -98,6 +98,16 @@
     return crop ? { image: crop.image, crop, kind } : {};
   }
 
+  function scenePreviewFor(character, background) {
+    const scene = character.scenes?.[background.id];
+    const crop = window.SCENE_PREVIEWS?.[character.id]?.[background.id];
+    // A reviewed crop belongs to one exact result, including its character and style.
+    // Never fall back to the uncropped image, which would expose the protagonist.
+    return crop && crop.image === scene?.image
+      ? { image: scene.image, crop, kind: "scene-sample" }
+      : {};
+  }
+
   function createOption(item, group, onSelect, preview = {}) {
     const button = document.createElement("button");
     button.type = "button";
@@ -118,7 +128,7 @@
         const frame = document.createElement("span");
         frame.className = `preview-frame ${preview.kind}`;
         const cropWindow = document.createElement("span");
-        cropWindow.className = "portrait-window";
+        cropWindow.className = preview.kind === "scene-sample" ? "scene-window" : "portrait-window";
         const { x, y, w, h } = preview.crop;
         image.style.setProperty("--crop-width", `${100 / w}%`);
         image.style.setProperty("--crop-height", `${100 / h}%`);
@@ -201,12 +211,11 @@
   function renderBackgroundOptions() {
     elements.backgroundOptions.replaceChildren();
     const character = selectedCharacter();
-    availableBackgrounds(character).forEach((item, index) => elements.backgroundOptions.append(createOption(item, "場景", selectBackground, {
-      clue: sceneClues[item.id],
-      index,
-      caption: character.scenes?.[item.id].available === false ? "此組合圖片待補齊" : sceneClues[item.id]?.teaser,
+    availableBackgrounds(character).forEach((item) => elements.backgroundOptions.append(createOption(item, "場景", selectBackground, {
+      ...scenePreviewFor(character, item),
+      caption: character.scenes?.[item.id].available === false ? "此組合圖片待補齊" : "場景局部預覽（不含主角）",
     })));
-    elements.backgroundHint.textContent = "從圖示和文字找線索，選一段冒險；完整場景等你最後揭曉。";
+    elements.backgroundHint.textContent = "先看沒有主角的場景預覽，再選擇冒險地點。預覽取自最後揭曉的同一張圖片，場景與畫風都一致。";
   }
 
   function updateRecipe() {
