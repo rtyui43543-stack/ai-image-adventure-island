@@ -557,10 +557,10 @@ window.SCENE_PREVIEWS = {
     },
     "FB11": {
       "image": "assets/female-v5/3d/fr03-fb11.webp",
-      "x": 0.5466666666666666,
-      "y": 0.58,
-      "w": 0.3466666666666667,
-      "h": 0.39
+      "x": 0.35,
+      "y": 0.62,
+      "w": 0.21,
+      "h": 0.23625
     },
     "FB12": {
       "image": "assets/female-v5/3d/fr03-fb12.webp",
@@ -677,10 +677,10 @@ window.SCENE_PREVIEWS = {
     },
     "FB11": {
       "image": "assets/female-v5/anime/fr03-fb11.webp",
-      "x": 0.5466666666666666,
-      "y": 0.58,
-      "w": 0.3466666666666667,
-      "h": 0.39
+      "x": 0.35,
+      "y": 0.62,
+      "w": 0.21,
+      "h": 0.23625
     },
     "FB12": {
       "image": "assets/female-v5/anime/fr03-fb12.webp",
@@ -797,10 +797,10 @@ window.SCENE_PREVIEWS = {
     },
     "FB11": {
       "image": "assets/female-v5/clay/fr03-fb11.webp",
-      "x": 0.5466666666666666,
-      "y": 0.58,
-      "w": 0.3466666666666667,
-      "h": 0.39
+      "x": 0.35,
+      "y": 0.62,
+      "w": 0.21,
+      "h": 0.23625
     },
     "FB12": {
       "image": "assets/female-v5/clay/fr03-fb12.webp",
@@ -917,10 +917,10 @@ window.SCENE_PREVIEWS = {
     },
     "FB11": {
       "image": "assets/female-v5/watercolor/fr03-fb11.webp",
-      "x": 0.5466666666666666,
-      "y": 0.58,
-      "w": 0.3466666666666667,
-      "h": 0.39
+      "x": 0.35,
+      "y": 0.62,
+      "w": 0.21,
+      "h": 0.23625
     },
     "FB12": {
       "image": "assets/female-v5/watercolor/fr03-fb12.webp",
