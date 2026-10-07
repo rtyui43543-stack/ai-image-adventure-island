@@ -92,28 +92,28 @@ window.SCENE_PREVIEWS = {
   },
   "B_ELEMENTAL_MAGE": {
     "BB13": {
-      "image": "assets/male-v4/3d/br04-bb13.webp",
+      "image": "assets/male-v6/3d/br04-bb13.webp",
       "x": 0.5,
       "y": 0.224375,
       "w": 0.49,
       "h": 0.55125
     },
     "BB14": {
-      "image": "assets/male-v4/3d/br04-bb14.webp",
+      "image": "assets/male-v6/3d/br04-bb14.webp",
       "x": 0.031111111111111124,
       "y": 0.025,
       "w": 0.21777777777777776,
       "h": 0.245
     },
     "BB15": {
-      "image": "assets/male-v4/3d/br04-bb15.webp",
+      "image": "assets/male-v6/3d/br04-bb15.webp",
       "x": 0.59,
       "y": 0.5049999999999999,
       "w": 0.4,
       "h": 0.45000000000000007
     },
     "BB16": {
-      "image": "assets/male-v4/3d/br04-bb16.webp",
+      "image": "assets/male-v6/3d/br04-bb16.webp",
       "x": 0.69,
       "y": 0.35625000000000007,
       "w": 0.3,
@@ -362,28 +362,28 @@ window.SCENE_PREVIEWS = {
   },
   "B_WIND_SKATER_WATERCOLOR": {
     "BB01": {
-      "image": "assets/male-v5/watercolor/br01-bb01.webp",
+      "image": "assets/male-v6/watercolor/br01-bb01.webp",
       "x": 0.61,
       "y": 0.21625,
       "w": 0.38,
       "h": 0.42750000000000005
     },
     "BB02": {
-      "image": "assets/male-v5/watercolor/br01-bb02.webp",
+      "image": "assets/male-v6/watercolor/br01-bb02.webp",
       "x": 0.67,
       "y": 0.449375,
       "w": 0.33,
       "h": 0.37124999999999997
     },
     "BB03": {
-      "image": "assets/male-v5/watercolor/br01-bb03.webp",
+      "image": "assets/male-v6/watercolor/br01-bb03.webp",
       "x": 0.047499999999999994,
       "y": 0.035,
       "w": 0.24000000000000002,
       "h": 0.27
     },
     "BB04": {
-      "image": "assets/male-v5/watercolor/br01-bb04.webp",
+      "image": "assets/male-v6/watercolor/br01-bb04.webp",
       "x": 0.01,
       "y": 0.01,
       "w": 0.36,
@@ -392,28 +392,28 @@ window.SCENE_PREVIEWS = {
   },
   "B_FOREST_TRACKER_WATERCOLOR": {
     "BB05": {
-      "image": "assets/male-v5/watercolor/br02-bb05.webp",
+      "image": "assets/male-v6/watercolor/br02-bb05.webp",
       "x": 0.01,
       "y": 0.15499999999999997,
       "w": 0.4,
       "h": 0.45000000000000007
     },
     "BB06": {
-      "image": "assets/male-v5/watercolor/br02-bb06.webp",
+      "image": "assets/male-v6/watercolor/br02-bb06.webp",
       "x": 0.6,
       "y": 0.47281249999999997,
       "w": 0.395,
       "h": 0.444375
     },
     "BB07": {
-      "image": "assets/male-v5/watercolor/br02-bb07.webp",
+      "image": "assets/male-v6/watercolor/br02-bb07.webp",
       "x": 0.6122222222222222,
       "y": 0.08,
       "w": 0.35555555555555557,
       "h": 0.4
     },
     "BB08": {
-      "image": "assets/male-v5/watercolor/br02-bb08.webp",
+      "image": "assets/male-v6/watercolor/br02-bb08.webp",
       "x": 0.18,
       "y": 0.08437499999999999,
       "w": 0.25,
@@ -422,28 +422,28 @@ window.SCENE_PREVIEWS = {
   },
   "B_OCEAN_EXPLORER_WATERCOLOR": {
     "BB09": {
-      "image": "assets/male-v3/watercolor/br03-bb09.webp",
+      "image": "assets/male-v6/watercolor/br03-bb09.webp",
       "x": 0.045,
       "y": 0.47781250000000003,
       "w": 0.435,
       "h": 0.489375
     },
     "BB10": {
-      "image": "assets/male-v3/watercolor/br03-bb10.webp",
+      "image": "assets/male-v6/watercolor/br03-bb10.webp",
       "x": 0.15388888888888888,
       "y": 0.56,
       "w": 0.38222222222222224,
       "h": 0.43
     },
     "BB11": {
-      "image": "assets/male-v3/watercolor/br03-bb11.webp",
+      "image": "assets/male-v6/watercolor/br03-bb11.webp",
       "x": 0.015,
       "y": 0.30374999999999996,
       "w": 0.34,
       "h": 0.3825
     },
     "BB12": {
-      "image": "assets/male-v3/watercolor/br03-bb12.webp",
+      "image": "assets/male-v6/watercolor/br03-bb12.webp",
       "x": 0.68,
       "y": 0.26625000000000004,
       "w": 0.3,
@@ -452,28 +452,28 @@ window.SCENE_PREVIEWS = {
   },
   "B_ELEMENTAL_MAGE_WATERCOLOR": {
     "BB13": {
-      "image": "assets/male-v4/watercolor/br04-bb13.webp",
+      "image": "assets/male-v6/watercolor/br04-bb13.webp",
       "x": 0.5,
       "y": 0.224375,
       "w": 0.49,
       "h": 0.55125
     },
     "BB14": {
-      "image": "assets/male-v4/watercolor/br04-bb14.webp",
+      "image": "assets/male-v6/watercolor/br04-bb14.webp",
       "x": 0.031111111111111124,
       "y": 0.025,
       "w": 0.21777777777777776,
       "h": 0.245
     },
     "BB15": {
-      "image": "assets/male-v4/watercolor/br04-bb15.webp",
+      "image": "assets/male-v6/watercolor/br04-bb15.webp",
       "x": 0.59,
       "y": 0.5049999999999999,
       "w": 0.4,
       "h": 0.45000000000000007
     },
     "BB16": {
-      "image": "assets/male-v4/watercolor/br04-bb16.webp",
+      "image": "assets/male-v6/watercolor/br04-bb16.webp",
       "x": 0.69,
       "y": 0.35625000000000007,
       "w": 0.3,

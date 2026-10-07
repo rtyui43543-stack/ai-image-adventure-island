@@ -231,23 +231,23 @@ window.APP_DATA = {
       "name": "元素魔法師",
       "roleName": "元素魔法師",
       "note": "魔杖與元素法術・掌握風雷火焰",
-      "image": "assets/male-v4/3d/br04-bb14.webp",
+      "image": "assets/male-v6/3d/br04-bb16.webp",
       "appearance": "深藍黑短髮、深紫色銀金細邊魔法長外套、短披肩、白襯衫與深色背心、深色長褲、黑色短靴與細長魔杖",
       "scenes": {
         "BB13": {
-          "image": "assets/male-v4/3d/br04-bb13.webp",
+          "image": "assets/male-v6/3d/br04-bb13.webp",
           "action": "一腳踏上高岩，雙手合握魔杖舉過頭頂，側身仰望風暴，牽引雲中巨大藍白分岔雷網"
         },
         "BB14": {
-          "image": "assets/male-v4/3d/br04-bb14.webp",
+          "image": "assets/male-v6/3d/br04-bb14.webp",
           "action": "前腿屈膝、後腿向後伸展，以側身低弓步平舉魔杖向前，另一手引導火焰，召喚展開巨大雙翼的白金橙紅火鳥"
         },
         "BB15": {
-          "image": "assets/male-v4/3d/br04-bb15.webp",
+          "image": "assets/male-v6/3d/br04-bb15.webp",
           "action": "身體前傾橫向御風飛行，一手持杖前伸、另一手向後掠，雙腿彎曲於身後，披肩與衣襬沿著巨大 S 形青白風流向後飄動"
         },
         "BB16": {
-          "image": "assets/male-v4/3d/br04-bb16.webp",
+          "image": "assets/male-v6/3d/br04-bb16.webp",
           "action": "單膝跪地，一手掌心壓住冰面、另一手將魔杖尖端點向冰面，點亮向外擴散的星環光紋，展開包覆全身的巨大半球形透明結界"
         }
       }
@@ -492,23 +492,23 @@ window.APP_DATA = {
       "name": "疾風滑板手",
       "roleName": "疾風滑板手",
       "note": "懸浮滑板・勇敢靈活的城市冒險",
-      "image": "assets/male-v5/watercolor/br01-bb01.webp",
+      "image": "assets/male-v6/watercolor/br01-bb01.webp",
       "appearance": "黑色短髮、橘色安全帽、橘白運動外套、深灰長褲、護膝護腕與白橘球鞋，駕馭橘白配色、底部發出青藍光芒的懸浮滑板",
       "scenes": {
         "BB01": {
-          "image": "assets/male-v5/watercolor/br01-bb01.webp",
+          "image": "assets/male-v6/watercolor/br01-bb01.webp",
           "action": "雙腳踩穩傾斜的懸浮滑板，以較高站姿將身體向彎道內側大幅側傾，前手壓低、後手向後伸展保持平衡"
         },
         "BB02": {
-          "image": "assets/male-v5/watercolor/br01-bb02.webp",
+          "image": "assets/male-v6/watercolor/br01-bb02.webp",
           "action": "在空中將雙膝收向胸前，一手抓住雙腳之間的滑板側緣，另一手高舉平衡，跨越低矮岩脊後準備落地"
         },
         "BB03": {
-          "image": "assets/male-v5/watercolor/br01-bb03.webp",
+          "image": "assets/male-v6/watercolor/br01-bb03.webp",
           "action": "扭轉肩膀與腰部，前腿彎曲、後腿伸展，將滑板橫轉煞停，雙腳保持踩板，板底青光與細碎冰霧劃出弧線"
         },
         "BB04": {
-          "image": "assets/male-v5/watercolor/br01-bb04.webp",
+          "image": "assets/male-v6/watercolor/br01-bb04.webp",
           "action": "坐在木椅上，雙腳踩地，將滑板直立靠在膝前，一手固定板緣、另一手用小扳手調整發出青光的能源模組"
         }
       }
@@ -521,23 +521,23 @@ window.APP_DATA = {
       "name": "森野追蹤員",
       "roleName": "森野追蹤員",
       "note": "指南針與野外筆記・發現自然線索",
-      "image": "assets/male-v5/watercolor/br02-bb05.webp",
+      "image": "assets/male-v6/watercolor/br02-bb05.webp",
       "appearance": "栗色蓬鬆短髮、淡淡雀斑、青綠外套、黃色領巾、卡其短褲、登山靴與輕便背包",
       "scenes": {
         "BB05": {
-          "image": "assets/male-v5/watercolor/br02-bb05.webp",
+          "image": "assets/male-v6/watercolor/br02-bb05.webp",
           "action": "單膝跪在泥地旁，一手將放大鏡靠近清楚的動物足跡，另一手扶住攤開的野外筆記，低頭比對線索"
         },
         "BB06": {
-          "image": "assets/male-v5/watercolor/br02-bb06.webp",
+          "image": "assets/male-v6/watercolor/br02-bb06.webp",
           "action": "穿戴安全吊帶並連接保護繩，一手抓住較高繩梯、另一手扶住下方梯級，雙腳分踩不同高度，抬頭尋找枝椏間的鳥巢"
         },
         "BB07": {
-          "image": "assets/male-v5/watercolor/br02-bb07.webp",
+          "image": "assets/male-v6/watercolor/br02-bb07.webp",
           "action": "穿著救生衣坐在獨木舟內，雙手握住長槳，一手握槳頂、另一手握槳桿，將槳葉划入水中，沿溪流探索"
         },
         "BB08": {
-          "image": "assets/male-v5/watercolor/br02-bb08.webp",
+          "image": "assets/male-v6/watercolor/br02-bb08.webp",
           "action": "俯臥在野餐毯上，以雙肘支撐上半身，一手扶住筆記、另一手拿筆，抬頭觀察前方的螢火蟲並畫下發現"
         }
       }
@@ -550,23 +550,23 @@ window.APP_DATA = {
       "name": "深海探險員",
       "roleName": "深海探險員",
       "note": "潛水裝與探照燈・尋找海底祕密",
-      "image": "assets/male-v3/watercolor/br03-bb09.webp",
+      "image": "assets/male-v6/watercolor/br03-bb09.webp",
       "appearance": "深色微捲短髮、清晰透明潛水面罩、藍白配色並有橘色細節的柔軟潛水衣、小型氧氣背包與腳蹼",
       "scenes": {
         "BB09": {
-          "image": "assets/male-v3/watercolor/br03-bb09.webp",
+          "image": "assets/male-v6/watercolor/br03-bb09.webp",
           "action": "單膝跪在覆有細沙的船艙地板上，一手掀開寶箱蓋，另一手持燈照亮箱內寶物"
         },
         "BB10": {
-          "image": "assets/male-v3/watercolor/br03-bb10.webp",
+          "image": "assets/male-v6/watercolor/br03-bb10.webp",
           "action": "身體直立懸停、雙腿自然彎曲，雙手握住防水相機拍攝前方的海龜，保持觀察距離"
         },
         "BB11": {
-          "image": "assets/male-v3/watercolor/br03-bb11.webp",
+          "image": "assets/male-v6/watercolor/br03-bb11.webp",
           "action": "雙手握住小型水下推進器，身體沿斜線朝裂谷下方潛行，雙腿向後伸展，跟隨探照燈探索"
         },
         "BB12": {
-          "image": "assets/male-v3/watercolor/br03-bb12.webp",
+          "image": "assets/male-v6/watercolor/br03-bb12.webp",
           "action": "雙腳踩穩石階，屈膝前傾，以雙手握住石門中央的圓形機關轉輪，轉動後點亮門上的幾何光紋"
         }
       }
@@ -579,23 +579,23 @@ window.APP_DATA = {
       "name": "元素魔法師",
       "roleName": "元素魔法師",
       "note": "魔杖與元素法術・掌握風雷火焰",
-      "image": "assets/male-v4/watercolor/br04-bb14.webp",
+      "image": "assets/male-v6/watercolor/br04-bb14.webp",
       "appearance": "深藍黑短髮、深紫色銀金細邊魔法長外套、短披肩、白襯衫與深色背心、深色長褲、黑色短靴與細長魔杖",
       "scenes": {
         "BB13": {
-          "image": "assets/male-v4/watercolor/br04-bb13.webp",
+          "image": "assets/male-v6/watercolor/br04-bb13.webp",
           "action": "一腳踏上高岩，雙手合握魔杖舉過頭頂，側身仰望風暴，牽引雲中巨大藍白分岔雷網"
         },
         "BB14": {
-          "image": "assets/male-v4/watercolor/br04-bb14.webp",
+          "image": "assets/male-v6/watercolor/br04-bb14.webp",
           "action": "前腿屈膝、後腿向後伸展，以側身低弓步平舉魔杖向前，另一手引導火焰，召喚展開巨大雙翼的白金橙紅火鳥"
         },
         "BB15": {
-          "image": "assets/male-v4/watercolor/br04-bb15.webp",
+          "image": "assets/male-v6/watercolor/br04-bb15.webp",
           "action": "身體前傾橫向御風飛行，一手持杖前伸、另一手向後掠，雙腿彎曲於身後，披肩與衣襬沿著巨大 S 形青白風流向後飄動"
         },
         "BB16": {
-          "image": "assets/male-v4/watercolor/br04-bb16.webp",
+          "image": "assets/male-v6/watercolor/br04-bb16.webp",
           "action": "單膝跪地，一手掌心壓住冰面、另一手將魔杖尖端點向冰面，點亮向外擴散的星環光紋，展開包覆全身的巨大半球形透明結界"
         }
       }

@@ -26,11 +26,11 @@ window.MYSTERY_DATA = {
       "label": "角色造型特寫"
     },
     "B_ELEMENTAL_MAGE": {
-      "image": "assets/male-v4/3d/br04-bb14.webp",
-      "x": 0.216,
-      "y": 0.255,
-      "w": 0.2,
-      "h": 0.3,
+      "image": "assets/male-v6/3d/br04-bb16.webp",
+      "x": 0.4,
+      "y": 0.26,
+      "w": 0.205,
+      "h": 0.3075,
       "label": "角色造型特寫"
     },
     "B_WIND_SKATER_ANIME": {
@@ -98,7 +98,7 @@ window.MYSTERY_DATA = {
       "label": "角色造型特寫"
     },
     "B_WIND_SKATER_WATERCOLOR": {
-      "image": "assets/male-v5/watercolor/br01-bb01.webp",
+      "image": "assets/male-v6/watercolor/br01-bb01.webp",
       "x": 0.402,
       "y": 0.06,
       "w": 0.206,
@@ -106,7 +106,7 @@ window.MYSTERY_DATA = {
       "label": "角色造型特寫"
     },
     "B_FOREST_TRACKER_WATERCOLOR": {
-      "image": "assets/male-v5/watercolor/br02-bb05.webp",
+      "image": "assets/male-v6/watercolor/br02-bb05.webp",
       "x": 0.438,
       "y": 0.144,
       "w": 0.288,
@@ -114,7 +114,7 @@ window.MYSTERY_DATA = {
       "label": "角色造型特寫"
     },
     "B_OCEAN_EXPLORER_WATERCOLOR": {
-      "image": "assets/male-v3/watercolor/br03-bb09.webp",
+      "image": "assets/male-v6/watercolor/br03-bb09.webp",
       "x": 0.43,
       "y": 0.069,
       "w": 0.256,
@@ -122,7 +122,7 @@ window.MYSTERY_DATA = {
       "label": "角色造型特寫"
     },
     "B_ELEMENTAL_MAGE_WATERCOLOR": {
-      "image": "assets/male-v4/watercolor/br04-bb14.webp",
+      "image": "assets/male-v6/watercolor/br04-bb14.webp",
       "x": 0.218,
       "y": 0.282,
       "w": 0.186,
